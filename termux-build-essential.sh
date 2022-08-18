@@ -78,11 +78,6 @@ echo "${Gre}";
 apt install freetype -y
 echo "";
 
-echo "${Blu}Installing freetype-dev";
-echo "${Gre}";
-apt install freetype-dev -y
-echo "";
-
 echo "${Blu}Installing libpng";
 echo "${Gre}";
 apt install libpng -y
