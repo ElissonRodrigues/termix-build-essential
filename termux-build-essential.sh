@@ -133,7 +133,7 @@ echo "${Gre}";
 curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
 bash setup-pointless-repo.sh
 rm setup-pointless-repo.sh
-apt install scipy -v
+apt update -y
 echo "";
 
 echo "${Gre}Installations have been completed."
