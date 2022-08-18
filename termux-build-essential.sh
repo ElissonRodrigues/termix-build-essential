@@ -13,15 +13,15 @@ echo "${Red}";
 termux-setup-storage
 echo "";
 
+echo "${Blu}Returning to home folder → cd";
+echo "${Gre}";
+cd
+echo "";
+
 echo "${Blu}Updating Termux Files";
 echo "${Red}";
 apt update -y
 apt upgrade -y
-echo "";
-
-echo "${Blu}Returning to home folder → cd";
-echo "${Gre}";
-cd
 echo "";
 
 echo "${Blu}export LD=ld";
