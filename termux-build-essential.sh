@@ -8,9 +8,13 @@ Pur='\033[0;35m';     BPur='\033[1;35m';    UPur='\033[4;35m';    IPur='\033[0;9
 Cya='\033[0;36m';     BCya='\033[1;36m';    UCya='\033[4;36m';    ICya='\033[0;96m';    BICya='\033[1;96m';   On_Cya='\033[46m';    On_ICya='\033[0;106m';
 Whi='\033[0;37m';     BWhi='\033[1;37m';    UWhi='\033[4;37m';    IWhi='\033[0;97m';    BIWhi='\033[1;97m';   On_Whi='\033[47m';    On_IWhi='\033[0;107m';
 
-echo "${Blu}Updating Termux Files";
+echo "${Blu}Checking storage access";
 echo "${Red}";
 termux-setup-storage
+echo "";
+
+echo "${Blu}Updating Termux Files";
+echo "${Red}";
 apt update -y
 apt upgrade -y
 echo "";
@@ -84,11 +88,6 @@ echo "${Gre}";
 apt install libpng -y
 echo "";
 
-echo "${Blu}Installing libpng-dev";
-echo "${Gre}";
-apt install libpng-dev -y
-echo "";
-
 echo "${Blu}Installing libtiff";
 echo "${Gre}";
 apt install libtiff -y
@@ -131,8 +130,9 @@ echo "";
 
 echo "${Blu}Installing Scipy";
 echo "${Gre}";
-$PREFIX/bin/wget https://its-pointless.github.io/setup-pointless-repo.sh 
+curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
 bash setup-pointless-repo.sh
+rm setup-pointless-repo.sh
 apt install scipy -v
 echo "";
 
