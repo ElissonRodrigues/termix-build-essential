@@ -19,10 +19,6 @@ apt update -y
 apt upgrade -y
 echo "";
 
-echo "${Red}Installing packages needed";
-echo "${Gre}";
-echo "";
-
 echo "${Blu}Returning to home folder → cd";
 echo "${Gre}";
 cd
@@ -31,6 +27,10 @@ echo "";
 echo "${Blu}export LD=ld";
 echo "${Gre}";
 export LD=ld
+echo "";
+
+echo "${Red}Installing packages needed";
+echo "${Gre}";
 echo "";
 
 echo "${Blu}Installing build-essential";
