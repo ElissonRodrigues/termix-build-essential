@@ -133,12 +133,12 @@ echo "${Gre}";
 curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
 bash setup-pointless-repo.sh
 rm setup-pointless-repo.sh
-apt update -y
 echo "";
 
 echo "${Blu}Installing unstable-repo";
 echo "${Gre}";
 apt install unstable-repo -y
+apt update -y
 echo "";
 
 echo "${Gre}Installations have been completed."
