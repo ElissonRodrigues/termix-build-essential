@@ -53,6 +53,11 @@ echo "${Gre}";
 pip install --upgrade pip -v
 echo "";
 
+echo "${Blu}Installing postgresql";
+echo "${Gre}";
+apt install postgresql -y
+echo "";
+
 echo "${Blu}Installing fftw";
 echo "${Gre}";
 apt install fftw -y
