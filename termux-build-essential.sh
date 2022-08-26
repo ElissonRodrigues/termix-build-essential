@@ -53,6 +53,11 @@ echo "${Gre}";
 pip install --upgrade pip -v
 echo "";
 
+echo "${Blu}Installing Numpy";
+echo "${Gre}";
+MATHLIB=m pip install numpy
+echo "";
+
 echo "${Blu}Installing postgresql";
 echo "${Gre}";
 apt install postgresql -y
