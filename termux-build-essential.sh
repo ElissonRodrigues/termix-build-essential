@@ -50,11 +50,12 @@ echo "";
 
 echo "${Blu}Updating PIP";
 echo "${Gre}";
-pip install --upgrade pip -v
+apt upgrade python-pip -y
 echo "";
 
 echo "${Blu}Installing Numpy";
 echo "${Gre}";
+export CFLAGS="-Wno-implicit-function-declaration"
 MATHLIB=m pip install numpy
 echo "";
 
@@ -133,11 +134,11 @@ echo "${Gre}";
 apt install wget -y
 echo "";
 
-echo "${Blu}Installing pointless-repo";
+echo "${Blu}Installing tur-repo";
 echo "${Gre}";
-curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
-bash setup-pointless-repo.sh
-rm setup-pointless-repo.sh
+pkg install tur-repo
+
+
 echo "";
 
 echo "${Blu}Installing unstable-repo";
